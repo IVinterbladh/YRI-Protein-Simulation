@@ -1,1 +1,1 @@
-# YRI---Protein-Simulation
+# YRI-Protein-Simulation
