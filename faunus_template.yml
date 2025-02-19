@@ -35,15 +35,10 @@ moleculelist: # define molecule types
         keepcharges: False
         insdir: [0,0,0]
         insoffset: [0,0,20]
-
-  #  - Na+: {atoms: [na], atomic: true, activity: {{ Cs }} }
-  #  - Cl-: {atoms: [cl], atomic: true, activity: {{ Cs }} }
         
 insertmolecules: # create an initial system (random insertion)
      - molecule1: {N: 1}
      - molecule2: {N: 1}
-    # - Na+: {N: 200}
-    # - Cl-: {N: 200}
      
 reactionlist:
     - HCTR = CTR + H+:  {pK: 3.67}
@@ -58,10 +53,8 @@ reactionlist:
 
 moves:
      - rcmc: {repeat: 5}
-    # - transrot: {molecule: Na+, repeat: N}
-    # - transrot: {molecule: Cl-, repeat: N}
-     - moltransrot: {molecule: molecule1, dp: 0, dprot: 0.1}
-     - moltransrot: {molecule: molecule2, dp: 0.5, dprot: 0.1, dir: [0,0,1]}
+     - moltransrot: {molecule: molecule1, dp: 0, dprot: 0.5}
+     - moltransrot: {molecule: molecule2, dp: 1, dprot: 0.5, dir: [0,0,1]}
      
 analysis:
     - virtualtranslate: {file: vt.dat.gz, dL: 0.01, molecule: molecule1, nstep: 5, dir: [0,0,1]}
