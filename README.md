@@ -1,5 +1,5 @@
 # YRI - Protein Simulation
-## A step-by-step guide for protein simulation and calculations in Faunus and Duello.
+## A step-by-step guide for protein simulations and calculations using the softwares Faunus and Duello.
 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IVinterbladh/YRI-Protein-Simulation/HEAD)
