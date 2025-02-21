@@ -1,4 +1,5 @@
-# YRI- Protein Simulation
+# YRI - Protein Simulation
+## A step-by-step guide for protein simulation and calculations in Faunus and Duello.
 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IVinterbladh/YRI-Protein-Simulation/HEAD)
@@ -18,11 +19,14 @@ Option 2:
 Install all dependencies in a conda environment and run the simulations localy on your computer
  - Install an Anaconda/Conda/Miniconda or similar on your computer.
  - Open your terminal and write:
-   
+   '''console
     conda env create -f environment.yml
-
+   '''
     This creates an environment with all packages needed for running the notebooks
-- Activate new environment: conda activate Protein-sim
+- Activate new environment:
+  '''console
+  conda activate Protein-sim
+  '''
 - Now you can open the notebooks with either Jupyter Notebook or Jupyter Lab
 
 
