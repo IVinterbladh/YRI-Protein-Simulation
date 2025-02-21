@@ -22,7 +22,7 @@ atomlist:
     - na:   { q: 1.0, sigma: 4.6, mw: 1, dp: 50, eps: 0.005 }
     - cl:   { q: -1.0, sigma: 4.6, mw: 1, dp: 50, eps: 0.005 }
     - H+: {pactivity: {{pH}}, implicit: True}
-    - "../faunus-aminoacid-atoms.json"
+    - "../structures/faunus-aminoacid-atoms.json"
 
 moleculelist: # define molecule types
     - molecule1: 

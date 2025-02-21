@@ -1,0 +1,394 @@
+{
+  "analysis": [
+    {
+      "virtualtranslate": {
+        "dL": 0.01,
+        "dir": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "force": -0.8999571147362504,
+        "nstep": 5,
+        "relative time": 0.073,
+        "samples": 200
+      }
+    },
+    {
+      "reactioncoordinate": {
+        "average": -1.294,
+        "file": "q.dat.gz",
+        "index": 0,
+        "nstep": 2,
+        "property": "Q",
+        "samples": 500,
+        "type": "molecule"
+      }
+    },
+    {
+      "reactioncoordinate": {
+        "average": 28.24072449925255,
+        "file": "R.dat.gz",
+        "index": 1,
+        "nstep": 5,
+        "property": "com_z",
+        "samples": 200,
+        "type": "molecule"
+      }
+    },
+    {
+      "systemenergy": {
+        "Cv/kB": 38.521,
+        "file": "energy.dat.gz",
+        "final": [
+          0.0,
+          0.0,
+          854.0603606114578
+        ],
+        "init": 1130.4,
+        "mean": 855.29,
+        "nstep": 5,
+        "relative time": 0.0747,
+        "samples": 200
+      }
+    },
+    {
+      "sanity": {
+        "nstep": 200,
+        "samples": 5
+      }
+    },
+    {
+      "multipole": {
+        "molecules": {
+          "molecule1": {
+            "C": 0.8475000000000001,
+            "Z": -1.25,
+            "Z2": 2.41,
+            "μ": 33.219207206203095,
+            "μ²": 1120.5498800804146
+          },
+          "molecule2": {
+            "C": 0.8076000000000003,
+            "Z": -1.18,
+            "Z2": 2.2,
+            "μ": 34.14543644276569,
+            "μ²": 1178.7834924952667
+          }
+        },
+        "nstep": 10,
+        "samples": 100
+      }
+    },
+    {
+      "savestate": {
+        "file": "confout.xyz"
+      }
+    },
+    {
+      "savestate": {
+        "file": "state.json"
+      }
+    },
+    {
+      "xtcfile": {
+        "file": "traj.xtc",
+        "nstep": 10,
+        "samples": 100
+      }
+    },
+    {
+      "Multipole Distribution": {
+        "dr": 0.25,
+        "file": "multipole.dat",
+        "molecules": [
+          "molecule1",
+          "molecule2"
+        ],
+        "nstep": 5,
+        "samples": 200
+      }
+    }
+  ],
+  "compiler": "Clang 14.0.6",
+  "energy": [
+    {
+      "hamiltonian": [
+        {
+          "ContainerOverlap": {
+            "relative time": 1.9553946545096986e-05
+          }
+        },
+        {
+          "particle-self-energy": {
+            "com": false,
+            "molecules": [
+              "*"
+            ],
+            "relative time": 0.00012074649413958294
+          }
+        },
+        {
+          "nonbonded": {
+            "functor potential": {
+              "default": [
+                {
+                  "lennardjones": {
+                    "mixing": "LB"
+                  }
+                },
+                {
+                  "coulomb": {
+                    "coulomb": {
+                      "cutoff": 1.3407807929942596e+154,
+                      "debyelength": 13.595293303198721,
+                      "doi": "Premier mémoire sur l’électricité et le magnétisme by Charles-Augustin de Coulomb",
+                      "lB": 6.9624955289780015,
+                      "type": "plain"
+                    },
+                    "debyelength": 13.595293303198721,
+                    "epsr": 80,
+                    "type": "yukawa"
+                  }
+                }
+              ]
+            },
+            "relative time": 0.43939372761910617,
+            "selfenergy": {
+              "dipole": false,
+              "monopole": true
+            },
+            "summation_policy": "serial"
+          }
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "length": 100.0,
+    "radius": 40.0,
+    "type": "cylinder"
+  },
+  "groups": [
+    {
+      "molecule1": {
+        "compressible": false,
+        "index": [
+          0,
+          50
+        ],
+        "size": 51
+      }
+    },
+    {
+      "molecule2": {
+        "compressible": false,
+        "index": [
+          51,
+          101
+        ],
+        "size": 51
+      }
+    }
+  ],
+  "montecarlo": {
+    "average potential energy (kT)": 856.0587863470236,
+    "last move": "moltransrot"
+  },
+  "moves": [
+    {
+      "rcmc": {
+        "acceptance": 0.0903,
+        "cite": "doi:10/fqcpg3",
+        "moves": 5028,
+        "reactions": {
+          "HARG = ARG + H+": {
+            "acceptance -->": 0.0,
+            "acceptance <--": 1.0,
+            "attempts": 274
+          },
+          "HCTR = CTR + H+": {
+            "acceptance -->": 1.0,
+            "acceptance <--": 0.00687,
+            "attempts": 293
+          },
+          "HGLU = GLU + H+": {
+            "acceptance -->": 1.0,
+            "acceptance <--": 0.0142,
+            "attempts": 286
+          },
+          "HHIS = HIS + H+": {
+            "acceptance -->": 0.672,
+            "acceptance <--": 0.62,
+            "attempts": 493
+          },
+          "HLYS = LYS + H+": {
+            "acceptance -->": 0.0,
+            "acceptance <--": 1.0,
+            "attempts": 291
+          },
+          "HNTR = NTR + H+": {
+            "acceptance -->": 0.215,
+            "acceptance <--": 1.0,
+            "attempts": 303
+          },
+          "HTYR = TYR + H+": {
+            "acceptance -->": 0.00337,
+            "acceptance <--": 1.0,
+            "attempts": 306
+          }
+        },
+        "relative time": 0.0907,
+        "relative time (without energy calc)": 0.0461,
+        "repeat": 5,
+        "stochastic": true
+      }
+    },
+    {
+      "moltransrot": {
+        "R/Å ≈ √(⟨r²⟩/4⟨θ²⟩)": 0.0,
+        "acceptance": 0.904,
+        "dir": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dirrot": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dp": 0.0,
+        "dprot": 0.5,
+        "molecule": "molecule1",
+        "molid": 0,
+        "moves": 999,
+        "relative time": 0.368,
+        "repeat": 1,
+        "stochastic": true,
+        "√⟨r²⟩": 0.0,
+        "√⟨θ²⟩": 0.132,
+        "√⟨θ²⟩/°": 7.57
+      }
+    },
+    {
+      "moltransrot": {
+        "R/Å ≈ √(⟨r²⟩/4⟨θ²⟩)": 1.96,
+        "acceptance": 0.859,
+        "dir": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "dirrot": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dp": 1.0,
+        "dprot": 0.5,
+        "molecule": "molecule2",
+        "molid": 1,
+        "moves": 973,
+        "relative time": 0.358,
+        "repeat": 1,
+        "stochastic": true,
+        "√⟨r²⟩": 0.523,
+        "√⟨θ²⟩": 0.133,
+        "√⟨θ²⟩/°": 7.62
+      }
+    }
+  ],
+  "number of groups": 2,
+  "number of particles": 102,
+  "number of sweeps": 1000,
+  "reactionlist": [
+    {
+      "HCTR = CTR + H+": {
+        "lnK": -8.450487291288148,
+        "neutral": false,
+        "pK": 3.67,
+        "pK'": -3.3299999999999996,
+        "swap_move": true
+      }
+    },
+    {
+      "HASP = ASP + H+": {
+        "lnK": -9.210340371976184,
+        "neutral": false,
+        "pK": 4.0,
+        "pK'": -2.9999999999999996,
+        "swap_move": true
+      }
+    },
+    {
+      "HGLU = GLU + H+": {
+        "lnK": -10.131374409173803,
+        "neutral": false,
+        "pK": 4.4,
+        "pK'": -2.599999999999999,
+        "swap_move": true
+      }
+    },
+    {
+      "HHIS = HIS + H+": {
+        "lnK": -15.05890650818106,
+        "neutral": false,
+        "pK": 6.54,
+        "pK'": -0.4599999999999996,
+        "swap_move": true
+      }
+    },
+    {
+      "HCYS = CYS + H+": {
+        "lnK": -19.687102545099094,
+        "neutral": false,
+        "pK": 8.55,
+        "pK'": 1.5500000000000012,
+        "swap_move": true
+      }
+    },
+    {
+      "HNTR = NTR + H+": {
+        "lnK": -18.420680743952367,
+        "neutral": false,
+        "pK": 8.0,
+        "pK'": 1.0000000000000004,
+        "swap_move": true
+      }
+    },
+    {
+      "HTYR = TYR + H+": {
+        "lnK": -22.65743731506141,
+        "neutral": false,
+        "pK": 9.84,
+        "pK'": 2.8400000000000003,
+        "swap_move": true
+      }
+    },
+    {
+      "HLYS = LYS + H+": {
+        "lnK": -23.94688496713808,
+        "neutral": false,
+        "pK": 10.4,
+        "pK'": 3.400000000000001,
+        "swap_move": true
+      }
+    },
+    {
+      "HARG = ARG + H+": {
+        "lnK": -27.63102111592855,
+        "neutral": false,
+        "pK": 12.0,
+        "pK'": 5.0,
+        "swap_move": true
+      }
+    }
+  ],
+  "relative drift": -1.599129300524016e-14,
+  "simulation time": {
+    "in minutes": 0.0,
+    "in seconds": 0
+  },
+  "temperature": 300.0
+}

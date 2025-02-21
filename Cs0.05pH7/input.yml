@@ -1,0 +1,73 @@
+analysis:
+- virtualtranslate:
+    dL: 0.01
+    dir: [0, 0, 1]
+    file: vt.dat.gz
+    molecule: molecule1
+    nstep: 5
+- reactioncoordinate: {file: q.dat.gz, index: 0, nstep: 2, property: Q, type: molecule}
+- reactioncoordinate: {file: R.dat.gz, index: 1, nstep: 5, property: com_z, type: molecule}
+- systemenergy: {file: energy.dat.gz, nstep: 5}
+- sanity: {nstep: 200}
+- multipole: {nstep: 10}
+- savestate: {file: confout.xyz}
+- savestate: {file: state.json}
+- xtcfile: {file: traj.xtc, nstep: 10}
+- multipoledist:
+    dr: 0.25
+    file: multipole.dat
+    molecules: [molecule1, molecule2]
+    nstep: 5
+atomlist:
+- neutral: {dp: 50, eps: 0.15, q: 0, sigma: 4.0}
+- cation: {dp: 50, eps: 0.15, q: 1.0, sigma: 4.0}
+- anion: {dp: 50, eps: 0.15, q: -1.0, sigma: 4.0}
+- CYSs: {dp: 50, eps: 0.15, q: 0, sigma: 4.0}
+- FE: {dp: 50, eps: 0.15, q: 0, sigma: 4.0}
+- MAN: {dp: 50, eps: 0.15, q: 0, sigma: 4.0}
+- NAG: {dp: 50, eps: 0.15, q: 0, sigma: 4.0}
+- na: {dp: 50, eps: 0.005, mw: 1, q: 1.0, sigma: 4.6}
+- cl: {dp: 50, eps: 0.005, mw: 1, q: -1.0, sigma: 4.6}
+- H+: {implicit: true, pactivity: 7}
+- ../structures/faunus-aminoacid-atoms.json
+energy:
+- nonbonded:
+    default:
+    - lennardjones: {mixing: LB}
+    - coulomb: {debyelength: 13.595293303198721, epsr: 80, type: yukawa}
+geometry: {length: 100, radius: 40, type: cylinder}
+insertmolecules:
+- molecule1: {N: 1}
+- molecule2: {N: 1}
+mcloop: {macro: 10, micro: 5000}
+moleculelist:
+- molecule1:
+    insdir: [0, 0, 0]
+    insoffset: [0, 0, 0]
+    keepcharges: false
+    structure: ../structures/2hiu.xyz
+- molecule2:
+    insdir: [0, 0, 0]
+    insoffset: [0, 0, 20]
+    keepcharges: false
+    structure: ../structures/2hiu.xyz
+moves:
+- rcmc: {repeat: 5}
+- moltransrot: {dp: 0, dprot: 0.5, molecule: molecule1}
+- moltransrot:
+    dir: [0, 0, 1]
+    dp: 1
+    dprot: 0.5
+    molecule: molecule2
+random: {seed: fixed}
+reactionlist:
+- HCTR = CTR + H+: {pK: 3.67}
+- HASP = ASP + H+: {pK: 4.0}
+- HGLU = GLU + H+: {pK: 4.4}
+- HHIS = HIS + H+: {pK: 6.54}
+- HCYS = CYS + H+: {pK: 8.55}
+- HNTR = NTR + H+: {pK: 8.0}
+- HTYR = TYR + H+: {pK: 9.84}
+- HLYS = LYS + H+: {pK: 10.4}
+- HARG = ARG + H+: {pK: 12.0}
+temperature: 300
