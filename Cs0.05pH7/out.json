@@ -8,15 +8,15 @@
           0.0,
           1.0
         ],
-        "force": -0.02551560817665801,
+        "force": -0.023636448183964345,
         "nstep": 5,
-        "relative time": 0.0724,
+        "relative time": 0.0748,
         "samples": 10000
       }
     },
     {
       "reactioncoordinate": {
-        "average": -1.23112,
+        "average": -1.2364,
         "file": "q.dat.gz",
         "index": 0,
         "nstep": 2,
@@ -27,7 +27,7 @@
     },
     {
       "reactioncoordinate": {
-        "average": 18.74079510962264,
+        "average": 19.528149507579133,
         "file": "R.dat.gz",
         "index": 1,
         "nstep": 5,
@@ -38,17 +38,17 @@
     },
     {
       "systemenergy": {
-        "Cv/kB": 0.93909,
+        "Cv/kB": 0.95202,
         "file": "energy.dat.gz",
         "final": [
           0.0,
           0.0,
-          852.8157902718939
+          850.8531231356437
         ],
-        "init": 854.06,
-        "mean": 854.96,
+        "init": 854.22,
+        "mean": 854.98,
         "nstep": 5,
-        "relative time": 0.0738,
+        "relative time": 0.0764,
         "samples": 10000
       }
     },
@@ -62,18 +62,18 @@
       "multipole": {
         "molecules": {
           "molecule1": {
-            "C": 0.5674607600000001,
-            "Z": -1.2382,
-            "Z2": 2.1006,
-            "μ": 33.85355853223754,
-            "μ²": 1161.5897901291091
+            "C": 0.5604926400000001,
+            "Z": -1.2356,
+            "Z2": 2.0872,
+            "μ": 33.95142226613037,
+            "μ²": 1166.6952247512418
           },
           "molecule2": {
-            "C": 0.5848271599999999,
-            "Z": -1.2222,
-            "Z2": 2.0786,
-            "μ": 33.880093255132195,
-            "μ²": 1162.589463342252
+            "C": 0.5667708400000002,
+            "Z": -1.2446,
+            "Z2": 2.1158,
+            "μ": 33.94420668185243,
+            "μ²": 1167.5220215306958
           }
         },
         "nstep": 10,
@@ -116,7 +116,7 @@
       "hamiltonian": [
         {
           "ContainerOverlap": {
-            "relative time": 1.5800830311378173e-05
+            "relative time": 3.3763190248366603e-06
           }
         },
         {
@@ -125,7 +125,7 @@
             "molecules": [
               "*"
             ],
-            "relative time": 0.00010799632378510813
+            "relative time": 2.7011628048050482e-05
           }
         },
         {
@@ -153,7 +153,7 @@
                 }
               ]
             },
-            "relative time": 0.44244290669452363,
+            "relative time": 0.459569772163651,
             "selfenergy": {
               "dipole": false,
               "monopole": true
@@ -166,7 +166,7 @@
   ],
   "geometry": {
     "length": 100.0,
-    "radius": 40.0,
+    "radius": 50.0,
     "type": "cylinder"
   },
   "groups": [
@@ -192,54 +192,54 @@
     }
   ],
   "montecarlo": {
-    "average potential energy (kT)": 854.9621621914449,
+    "average potential energy (kT)": 854.9787234252648,
     "last move": "moltransrot"
   },
   "moves": [
     {
       "rcmc": {
-        "acceptance": 0.0958,
+        "acceptance": 0.0966,
         "cite": "doi:10/fqcpg3",
         "moves": 250214,
         "reactions": {
           "HARG = ARG + H+": {
-            "acceptance -->": 7.17e-05,
-            "acceptance <--": 1.0,
-            "attempts": 13943
+            "acceptance -->": 0.0,
+            "acceptance <--": null,
+            "attempts": 13917
           },
           "HCTR = CTR + H+": {
             "acceptance -->": 1.0,
-            "acceptance <--": 0.00243,
-            "attempts": 14035
+            "acceptance <--": 0.00343,
+            "attempts": 14052
           },
           "HGLU = GLU + H+": {
             "acceptance -->": 1.0,
-            "acceptance <--": 0.0193,
-            "attempts": 14022
+            "acceptance <--": 0.0167,
+            "attempts": 14001
           },
           "HHIS = HIS + H+": {
-            "acceptance -->": 0.618,
-            "acceptance <--": 0.593,
-            "attempts": 26539
+            "acceptance -->": 0.619,
+            "acceptance <--": 0.597,
+            "attempts": 26593
           },
           "HLYS = LYS + H+": {
-            "acceptance -->": 0.000799,
+            "acceptance -->": 0.00087,
             "acceptance <--": 1.0,
-            "attempts": 13782
+            "attempts": 13807
           },
           "HNTR = NTR + H+": {
-            "acceptance -->": 0.257,
+            "acceptance -->": 0.263,
             "acceptance <--": 1.0,
-            "attempts": 17371
+            "attempts": 17434
           },
           "HTYR = TYR + H+": {
-            "acceptance -->": 0.00656,
+            "acceptance -->": 0.00577,
             "acceptance <--": 1.0,
-            "attempts": 13967
+            "attempts": 13947
           }
         },
-        "relative time": 0.0926,
-        "relative time (without energy calc)": 0.0467,
+        "relative time": 0.0747,
+        "relative time (without energy calc)": 0.0278,
         "repeat": 5,
         "stochastic": true
       }
@@ -263,7 +263,7 @@
         "molecule": "molecule1",
         "molid": 0,
         "moves": 49848,
-        "relative time": 0.371,
+        "relative time": 0.378,
         "repeat": 1,
         "stochastic": true,
         "√⟨r²⟩": 0.0,
@@ -290,7 +290,7 @@
         "molecule": "molecule2",
         "molid": 1,
         "moves": 49938,
-        "relative time": 0.371,
+        "relative time": 0.377,
         "repeat": 1,
         "stochastic": true,
         "√⟨r²⟩": 0.566,
@@ -385,10 +385,10 @@
       }
     }
   ],
-  "relative drift": -2.763433195062497e-13,
+  "relative drift": -1.1578706483758992e-14,
   "simulation time": {
-    "in minutes": 0.3,
-    "in seconds": 18
+    "in minutes": 0.2833333333333333,
+    "in seconds": 17
   },
   "temperature": 300.0
 }

@@ -1,7 +1,7 @@
 {% set debyelength = 3.04/Cs**0.5 %}
 {% set kappa = Cs**0.5 / 3.04 %}
-{% set radius = 40 %}
-{% set length = 100 %}
+{% set radius = radius %}
+{% set length = length %}
 {% set volume = 3.14159265359*radius**2*length %}
 {% set Nsalt = (Cs*10**-27 * 6.022*10**23 * volume)|round|int %}
 
@@ -34,7 +34,7 @@ moleculelist: # define molecule types
         structure: {{structure}}
         keepcharges: False
         insdir: [0,0,0]
-        insoffset: [0,0,20]
+        insoffset: [0,0,{{insoffset}}]
         
 insertmolecules: # create an initial system (random insertion)
      - molecule1: {N: 1}
@@ -59,12 +59,9 @@ moves:
 analysis:
     - virtualtranslate: {file: vt.dat.gz, dL: 0.01, molecule: molecule1, nstep: 5, dir: [0,0,1]}
     - reactioncoordinate: {file: q.dat.gz, nstep: 2, type: molecule, property: Q, index: 0}
-    #- reactioncoordinate: {file: Nna.dat.gz, index: 7, nstep: 10, property: N, type: atom}
     - reactioncoordinate: {file: R.dat.gz, nstep: 5, type: molecule, property: com_z, index: 1}
     - systemenergy: {file: energy.dat.gz, nstep: 5} # save system energy
     - sanity: {nstep: 200}                           # is the simulation OK?
-   # - chargefluctuations: {nstep: 10, molecule: molecule1, pqrfile: betalac_avg.pqr}
-   # - molrdf: {file: rdf.dat, nstep: 5, dr: 0.25, name1: molecule1, name2: molecule2, dim: 1}
     - multipole: {nstep: 10}
     - savestate: {file: confout.xyz}
     - savestate: {file: state.json } # save restart file

@@ -35,7 +35,7 @@ energy:
     default:
     - lennardjones: {mixing: LB}
     - coulomb: {debyelength: 13.595293303198721, epsr: 80, type: yukawa}
-geometry: {length: 100, radius: 40, type: cylinder}
+geometry: {length: 100, radius: 50, type: cylinder}
 insertmolecules:
 - molecule1: {N: 1}
 - molecule2: {N: 1}
@@ -48,7 +48,7 @@ moleculelist:
     structure: ../structures/2hiu.xyz
 - molecule2:
     insdir: [0, 0, 0]
-    insoffset: [0, 0, 20]
+    insoffset: [0, 0, 30]
     keepcharges: false
     structure: ../structures/2hiu.xyz
 moves:
