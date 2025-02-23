@@ -29,6 +29,6 @@ Install all dependencies in a `conda` environment and run the simulations localy
   ```
 - Now you can open the notebooks with either `Jupyter Notebook` or `Jupyter Lab`
 
-### Any questions? Contant: issbel.vinterbladh@compchem.lu.se
+### Any questions? Contant: isabel.vinterbladh@compchem.lu.se
 
 
