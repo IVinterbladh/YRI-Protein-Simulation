@@ -1,4 +1,4 @@
-include: [calvados3.yaml]
+include: [duello_forcefield.yaml]
 system:
   energy:
     nonbonded:
