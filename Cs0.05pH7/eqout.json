@@ -10,7 +10,7 @@
         ],
         "force": -0.0986002592340988,
         "nstep": 5,
-        "relative time": 0.0752,
+        "relative time": 0.0745,
         "samples": 200
       }
     },
@@ -48,7 +48,7 @@
         "init": 884.39,
         "mean": 855.03,
         "nstep": 5,
-        "relative time": 0.0771,
+        "relative time": 0.0763,
         "samples": 200
       }
     },
@@ -115,7 +115,9 @@
     {
       "hamiltonian": [
         {
-          "ContainerOverlap": null
+          "ContainerOverlap": {
+            "relative time": 2.898937249604295e-06
+          }
         },
         {
           "particle-self-energy": {
@@ -123,7 +125,7 @@
             "molecules": [
               "*"
             ],
-            "relative time": 2.8960743711898523e-06
+            "relative time": 5.54307553169764e-05
           }
         },
         {
@@ -151,7 +153,7 @@
                 }
               ]
             },
-            "relative time": 0.45636152392182705,
+            "relative time": 0.44711831363470206,
             "selfenergy": {
               "dipole": false,
               "monopole": true
@@ -236,8 +238,8 @@
             "attempts": 305
           }
         },
-        "relative time": 0.0739,
-        "relative time (without energy calc)": 0.0274,
+        "relative time": 0.0757,
+        "relative time (without energy calc)": 0.0288,
         "repeat": 5,
         "stochastic": true
       }
@@ -261,7 +263,7 @@
         "molecule": "molecule1",
         "molid": 0,
         "moves": 999,
-        "relative time": 0.378,
+        "relative time": 0.374,
         "repeat": 1,
         "stochastic": true,
         "√⟨r²⟩": 0.0,
@@ -288,7 +290,7 @@
         "molecule": "molecule2",
         "molid": 1,
         "moves": 973,
-        "relative time": 0.368,
+        "relative time": 0.366,
         "repeat": 1,
         "stochastic": true,
         "√⟨r²⟩": 0.537,
