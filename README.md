@@ -3,6 +3,7 @@
 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IVinterbladh/YRI-Protein-Simulation/HEAD)
+[![DOI](https://zenodo.org/badge/934122103.svg)](https://doi.org/10.5281/zenodo.14913106)
 
 This project is made for the "Young Researchers' Symposium Life Science" the 24-25 of February, 2025.
 
