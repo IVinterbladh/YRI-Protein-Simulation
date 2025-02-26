@@ -61,3 +61,4 @@ dependencies:
       - MDAnalysis==2.8.0      
       - nglview==3.1.4
       - notebook==7.3.2
+      - duello==0.1.4

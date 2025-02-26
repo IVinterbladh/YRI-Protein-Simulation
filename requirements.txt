@@ -49,4 +49,5 @@ ruamel-yaml-conda @ file:///Users/runner/miniforge3/conda-bld/ruamel_yaml_166681
 ruamel.yaml @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml_1685519262474/work
 ruamel.yaml.clib @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml.clib_1670412930997/work
 scipy==1.9.3
+duello==0.1.4
 tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1677948868469/work
