@@ -36,7 +36,7 @@ nbclient @ file:///home/conda/feedstock_root/build_artifacts/nbclient_1680676954
 nbconvert @ file:///home/conda/feedstock_root/build_artifacts/nbconvert-meta_1681137024412/work
 nbformat @ file:///home/conda/feedstock_root/build_artifacts/nbformat_1679336765223/work
 nglview==3.1.4
-notebook==7.3.2
+notebook==7.5.6
 notebook_shim @ file:///home/conda/feedstock_root/build_artifacts/notebook-shim_1667478401171/work
 numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1668919179223/work
 pandas==1.5.3
