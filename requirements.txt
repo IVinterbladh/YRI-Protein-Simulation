@@ -21,7 +21,7 @@ jupyter_server @ file:///home/conda/feedstock_root/build_artifacts/jupyter_serve
 jupyter_server_fileid @ file:///home/conda/feedstock_root/build_artifacts/jupyter_server_fileid_1681071667289/work
 jupyter_server_terminals @ file:///home/conda/feedstock_root/build_artifacts/jupyter_server_terminals_1673491454549/work
 jupyter_server_ydoc @ file:///home/conda/feedstock_root/build_artifacts/jupyter_server_ydoc_1678043727957/work
-jupyterlab==4.3.5
+jupyterlab==4.5.7
 jupyterlab-pygments @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_pygments_1649936611996/work
 jupyterlab_server==2.27.3
 jupyterlab_widgets==3.0.13
