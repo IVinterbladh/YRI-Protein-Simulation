@@ -57,10 +57,10 @@ moves:
      - moltransrot: {molecule: molecule2, dp: 1, dprot: 0.5, dir: [0,0,1]}
      
 analysis:
-    - virtualtranslate: {file: vt.dat.gz, dL: 0.01, molecule: molecule1, nstep: 5, dir: [0,0,1]}
-    - reactioncoordinate: {file: q.dat.gz, nstep: 2, type: molecule, property: Q, index: 0}
-    - reactioncoordinate: {file: R.dat.gz, nstep: 5, type: molecule, property: com_z, index: 1}
-    - systemenergy: {file: energy.dat.gz, nstep: 5} # save system energy
+    - virtualtranslate: {file: vt.dat, dL: 0.01, molecule: molecule1, nstep: 5, dir: [0,0,1]}
+    - reactioncoordinate: {file: q.dat, nstep: 2, type: molecule, property: Q, index: 0}
+    - reactioncoordinate: {file: R.dat, nstep: 5, type: molecule, property: com_z, index: 1}
+    - systemenergy: {file: energy.dat, nstep: 5} # save system energy
     - sanity: {nstep: 200}                           # is the simulation OK?
     - multipole: {nstep: 10}
     - savestate: {file: confout.xyz}
